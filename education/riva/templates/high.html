@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>    
+<style>
+table, th, td {
+    border: 2px solid black;
+    padding: 4px 8px;
+}
+
+th {
+    background-color: #72CA88;
+    text-align: center;
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<h2>Student names</h2>
+
+<table style="width:50%">
+    <tr>
+      <th>firstname</th>
+      <th>lastname</th>
+      <th>grade</th>
+      <th>standard</th>
+    </tr>
+{% for x in mystudents %}
+    <tr>
+      <td>{{ x.firstname }}</td>
+      <td>{{ x.lastname }}</td>
+      <td>{{ x.grade }}</td>
+      <td>{{ x.standard }}</td>
+    </tr>
+{% endfor %}   
+</table>
+
+</body>
+</html>
+
+
+    
+
+    
